@@ -33,7 +33,6 @@ build
 dist
 lib/test
 doc/_build
-*env
 *ENV
 .DS_store
 .idea
