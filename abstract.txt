@@ -1,0 +1,9 @@
+Intrusion Detection with Machine Learning
+
+This project applies machine learning techniques to develop a classification model capable of identifying suspicious login activity based on network session data. 
+Using features such as login attempts, failed logins, IP reputation score, encryption usage, session duration, and unusual access times, the model is trained to 
+distinguish between legitimate and potentially malicious authentication attempts. The primary objective of this work is to design an application that can evaluate 
+login attempts and classify user activity as either normal or suspicious. This represents a supervised binary classification problem in which the target variable 
+indicates whether an attack was detected during a session. The resulting model could be integrated into authentication systems or security monitoring platforms to 
+enhance threat detection and support proactive intrusion prevention. Ultimately, this approach could provide organizations with a data-driven method for 
+strengthening access control mechanisms and mitigating unauthorized access attempts.
