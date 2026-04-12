@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+</head>
+<body>
+    <h1>Program Summary</h1>
+
+    <p><strong>Status:</strong> {{ data.status }}</p>
+    <p><strong>Start Time:</strong> {{ data.start_time }}</p>
+    <p><strong>End Time:</strong> {{ data.end_time }}</p>
+    <p><strong>Total Time:</strong> {{ data.total_time }} seconds</p>
+
+    <h2>Stats</h2>
+    <p><strong>Total login attempts:</strong> {{ data.login_attempts }}</p>
+    <p><strong>Failed attempts:</strong> {{ data.failed_attempts }}</p>
+
+    <br>
+    <a href="{{ url_for('login') }}">Start Over</a>
+</body>
+</html>

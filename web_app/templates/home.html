@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body>
+    <h1>Login successful</h1>
+    <p>You are now logged in.</p>
+
+    <form method="POST" action="{{ url_for('logout') }}">
+        <button type="submit">Log Out</button>
+    </form>
+</body>
+</html>
