@@ -15,7 +15,19 @@
     <p><strong>Total login attempts:</strong> {{ data.login_attempts }}</p>
     <p><strong>Failed attempts:</strong> {{ data.failed_attempts }}</p>
 
-    <br>
+    <h2>ML Feature Row</h2>
+    <ul>
+        <li>network_packet_size: {{ data.ml_data.network_packet_size }}</li>
+        <li>protocol_type: {{ data.ml_data.protocol_type }}</li>
+        <li>login_attempts: {{ data.ml_data.login_attempts }}</li>
+        <li>session_duration: {{ data.ml_data.session_duration }}</li>
+        <li>encryption_used: {{ data.ml_data.encryption_used }}</li>
+        <li>ip_reputation_score: {{ data.ml_data.ip_reputation_score }}</li>
+        <li>failed_logins: {{ data.ml_data.failed_logins }}</li>
+        <li>browser_type: {{ data.ml_data.browser_type }}</li>
+        <li>unusual_time_access: {{ data.ml_data.unusual_time_access }}</li>
+    </ul>
+
     <a href="{{ url_for('login') }}">Start Over</a>
 </body>
 </html>
