@@ -2,11 +2,15 @@ from flask import Flask, render_template, request, session, redirect, url_for
 import time
 from datetime import datetime
 
+from model import load_model, predict_attack
+
 app = Flask(__name__)
 app.secret_key = "simple-secret-key"
 
 USERNAME = "admin"
 PASSWORD = "password123"
+
+MODEL = load_model()
 
 
 @app.route("/", methods=["GET", "POST"])
@@ -73,6 +77,17 @@ def logout():
         "unusual_time_access": unusual_time_access
     }
 
+    # Handle errors with model predictions
+    try:
+        prediction_result = predict_attack(MODEL, ml_data)
+        prediction_error = ""
+    except ValueError as err:
+        prediction_result = None
+        prediction_error = str(err)
+    except Exception:
+        prediction_result = None
+        prediction_error = "The model could not generate a prediction unexpectedly. Please try again."
+
     data = {
         "status": "LOGGED OUT",
         "start_time": session["start_readable"],
@@ -80,7 +95,9 @@ def logout():
         "total_time": f"{total_time:.2f}",
         "login_attempts": session.get("login_attempts", 0),
         "failed_attempts": session.get("failed_attempts", 0),
-        "ml_data": ml_data
+        "ml_data": ml_data,
+        "prediction_result": prediction_result,
+        "prediction_error": prediction_error,
     }
 
     session.clear()

@@ -28,6 +28,16 @@
         <li>unusual_time_access: {{ data.ml_data.unusual_time_access }}</li>
     </ul>
 
-    <a href="{{ url_for('login') }}">Start Over</a>
+    <h2>Model Prediction</h2>
+    {% if data.prediction_result %}
+        <p><strong>Prediction:</strong> {{ data.prediction_result.label }}</p>
+        <p><strong>Probability of Attack:</strong> {{ "%.2f"|format(data.prediction_result.attack_probability * 100) }}%</p>
+    {% elif data.prediction_error %}
+        <p><strong>Prediction Error:</strong> {{ data.prediction_error }}</p>
+    {% endif %}
+
+    <form action="{{ url_for('login') }}" method="GET">
+        <button type="submit">Start Over</button>
+    </form>
 </body>
 </html>
