@@ -1,0 +1,8 @@
+1. Problem definition and motivation                                                       | score |
+    a. I think we did well in this                                                         |   5   |
+    b. same with this category                                                             |   5   |
+2. Data acquision and preprocessing                                                        |       |
+    a.                                                                                     |   5   |
+    b. We put a lot of effort in this but could not get very effective results.            |   4   |
+    c. I am happy with how we did this.                                                    |   5   |
+3. 
