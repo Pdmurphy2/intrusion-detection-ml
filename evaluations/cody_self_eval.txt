@@ -14,5 +14,5 @@
     b. We did not look much into deep learning for our project.                            |   3   |
 5. Presentation                                                                            |       |
     a. I think we did well on our visualizations.                                          |   5   |
-    b. We also communicated pretty well.                                                   |   5   |
-Final Score                                                                                | 56/60 |
+    b. We also communicated pretty well.                                                   |   4   |
+Final Score                                                                                | 55/60 |
