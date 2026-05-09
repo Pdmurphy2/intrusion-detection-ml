@@ -157,12 +157,6 @@ You can take a look at our app and how it functions in the running_app folder an
     - unusual_time_access value 1 is true so it is not normal business hours and 0 is false meaning it is normal business hours.
 - The last screen is the summary showing the values you entered and whether our model predicts what you entered as an attack or not.
 
-## Locations
-- Our finalized model is in the final_model folder.
-- anything to do with the application is in the web_app folder.
-    - screenshots of the running application is in the running_app folder inside of web_app.
-- The judges evaluations and our self evaluations are inside of the evaluations folder. 
-
 Here is the app running at the login screen:
 
 ![Login](web_app/running_app/login_screen.png)
@@ -203,5 +197,8 @@ Possible future improvements include:
 
 ---
 
-## Self Evaluations and Judge Feedback
-This can be found in the evaluations folder
+## Locations
+- Our finalized model is in the final_model folder.
+- anything to do with the application is in the web_app folder.
+    - screenshots of the running application is in the running_app folder inside of web_app.
+- The judges evaluations and our self evaluations are inside of the evaluations folder. 
