@@ -1,5 +1,10 @@
 # intrusion-detection-ml
-Python Machine Learning final repo
+Python Machine Learning final repo for CSCI 425 - Python Machine Learning
+
+ **Team Members**
+- __Patrick Murphy__
+- __Cody Stoffel__
+
 
 ## Our Model
 - We set out to make a machine learning model that given some input can tell whether the user behavior is normal or malicious.
